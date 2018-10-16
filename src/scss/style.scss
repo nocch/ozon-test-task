@@ -12,17 +12,36 @@ $font-stack: -apple-system, BlinkMacSystemFont,Roboto,'Open Sans','Helvetica Neu
 body {
   margin: 0;
   font-family: $font-stack;
-  #logo {
-    width: 10rem;
+}
+#logo {
+  width: 10rem;
+}
+.container {
+position: relative;
+max-width: 1440px;
+margin: 0 auto;
+  img {
+    width: 20rem;
   }
-  .container {
-  position: relative;
-  max-width: 1440px;
-  margin: 0 auto;
-    img {
-      width: 20rem;
-    }
+}
+section {
+  width: 100%;
+  margin: 0;
+  .content {
+  margin: 0 65px;
   }
+}
+section#sector1 {
+  background-color: #f2f2f2;
+}
+section#sector2 {
+  background-color: #ffffff;
+}
+section#sector3 {
+  background-color: #f2f2f2;
+}
+section#sector4 {
+  background-color: #005BFF;
 }
 * {
     outline: 1px solid red;
