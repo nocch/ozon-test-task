@@ -13,13 +13,42 @@ body {
   margin: 0;
   font-family: $font-stack;
 }
-#logo {
-  width: 10rem;
+header {
+  width: 100%;
+  margin: 0;
+  
+  .header {
+    position: relative;
+    max-width: 1440px;
+    height: 95px;
+    margin: 0 auto;
+    background-color: #005BFF;
+    *{
+      display: inline-block;
+    }
+    .tel {
+    float: right;
+    margin: 34px 61px;
+    color: #fff;
+    font-size: 18px;
+    }
+  }
 }
-.container {
-position: relative;
-max-width: 1440px;
-margin: 0 auto;
+#logo {
+    width: 198px;
+    margin: 22px 61px;
+}
+.header a {
+    margin: 0px 39px 0 0;
+}
+.header a:not([href]):not([tabindex]), .header a:not([href]):not([tabindex]):focus, .header a:not([href]):not([tabindex]):hover {
+  color: #fff;
+  cursor: pointer;
+}
+.page-container {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
   img {
     width: 20rem;
   }
@@ -36,6 +65,11 @@ section#sector1 {
 }
 section#sector2 {
   background-color: #ffffff;
+  .content{
+    .mosaic-item {
+      float: left;
+    }
+  }
 }
 section#sector3 {
   background-color: #f2f2f2;
@@ -55,6 +89,35 @@ section#sector4 {
     position: relative;
     z-index: 2;
 }
+section:after{
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.flex-content {
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  align-content: stretch;
+  h1 {
+    width: 50%;
+    margin: 154px 0px 0 112px;
+    font-size: 78px;
+    text-align: left;
+    line-height: 1;
+  }
+  div {
+    width: 40%;
+    font-size: 21px;
+    text-align: left;
+    margin: 178px 149px 0px 112px;
+    flex-direction: column;
+    }
+    
+  }
+
 @media (min-width: 1440) {
   
 }

@@ -4,18 +4,19 @@
 }; %>
 <%= _.template(require('./../includes/header.html'))(data) %>
 <div class="wrapper">
-  <div class="container">
+  <div class="page-container">
     <section id="sector1">
-      <div class="content">
+      <div class="content flex-content">
         <h1>
           Корпоративные сертификаты OZON.ru
         </h1>
-        <p>
-          Мы знаем, как угодить с подарком каждому — от сотрудников до бизнес-партнёров.
-        </p>
-        <a href="#">
-          Сертификаты для физических лиц
-        </a>
+        <div>
+          <p>Мы знаем, как угодить с подарком каждому — от сотрудников до бизнес-партнёров.</p>
+          <a href="#">
+            Сертификаты для физических лиц
+          </a>
+        </div>
+
         
       </div>
       <div class="content">
@@ -35,23 +36,23 @@
       </div>
       <div class="content">
       <div class="mosaic-item">
-        <img src="../img/logo.png"/>
+        <img src="../img/item1.png"/>
         <p>Маркетинговые промоакции</p>
       </div>
             <div class="mosaic-item">
-        <img src="../img/logo.png"/>
+        <img src="../img/item2.png"/>
         <p>Мотивация сотрудников</p>
       </div>
             <div class="mosaic-item">
-        <img src="../img/logo.png"/>
+        <img src="../img/item3.png"/>
         <p>Подарки на официальные праздники</p>
       </div>
             <div class="mosaic-item">
-        <img src="../img/logo.png"/>
+        <img src="../img/item4.png"/>
         <p>Подарки клиентам</p>
       </div>
             <div class="mosaic-item">
-        <img src="../img/logo.png"/>
+        <img src="../img/item5.png"/>
         <p>Сувениры для мероприятий</p>
       </div>
       </div>
@@ -167,4 +168,3 @@
     </section>
   </div>
 </div>
-<%= _.template(require('./../includes/footer.html'))(data) %>
