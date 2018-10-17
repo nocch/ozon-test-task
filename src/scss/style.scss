@@ -114,10 +114,32 @@ section:after{
     text-align: left;
     margin: 178px 149px 0px 112px;
     flex-direction: column;
-    }
+    position: relative;
     
+    a.sertificates {
+      position: absolute;
+      bottom:0;
+      }
+    }
   }
-
+a.sertificates:after{
+  content:">";
+  top: 0;
+  right: -10px;
+}
+#sector1 .button-content {
+  margin: 117px 0 181px 0;}
+#sector1 .button {
+  border: 3px solid #005bff;
+  color: #005bff;
+  margin: 0px 31px 0px 0px;
+  padding: 18px 197px;
+  font-size: 30px;
+}
+#sector1 .button.button-activ {
+  padding:19px 168px;
+  
+}
 @media (min-width: 1440) {
   
 }
