@@ -1,7 +1,18 @@
-import jQuery from 'jquery';
-import popper from 'popper.js';
-import bootstrap from 'bootstrap';
+$(function() {
+    $(window).scroll(function() {
+        animateText();
+        
+    });
 
-jQuery(function() {
-    jQuery('body').css('color', 'blue');
 });
+
+function animateText() {
+    $('h1').each(function(){
+        var elem = $(this);
+            if ((elem.offset().top-$(window).height()*0.7) < $(window).scrollTop()) {
+                elem.addClass('animated');
+            } else {
+                elem.removeClass('animated');
+            }
+    });
+}

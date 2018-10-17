@@ -149,9 +149,13 @@ a.sertificates:after{
 .mosaic-item {
     margin: 44px 76px 96px 40px;
 }
+section#sector3 .content {
+    margin: 0 65px;
+    padding: 30px 0 0 0;
+}
 #sector3 .content h1 {
     font-size: 74px;
-    margin: 153px 297px 100px 104px;
+    margin: 156px 100px 15px 106px;
     text-align: left;
     line-height: 1;
 }
@@ -163,10 +167,12 @@ a.sertificates:after{
     visibility: hidden;
 }
 .textmosaic {
-  width: 300px;
-  float:left;
-  margin: 30px 0 0 0;
+    width: 300px;
+    float: left;
+    margin: 28px 72px 40px 100px;
+    text-align: left;
 }
+
 section#sector4 .content.content-title { 
     padding: 150px 0 0 0;
 
@@ -215,6 +221,63 @@ section#sector4 .content.content-title {
   z-index: 3;
   background: url(../img/arrow.png);
 }
+.textmosaic.svg-wrapper {
+  position: relative;
+}
+.svg-anim {
+position: absolute;
+  width: 100px;
+  height: 100px;
+  top:33px;
+  left:300px;
+}
+a.downl {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -3px;
+  right: -50px;  
+}
+a.downl img {
+    width: 44px;
+    height: 73px;
+
+}
+path {
+  stroke-dasharray: 400;
+  animation: animateMe linear 4s normal forwards;
+  animation-iteration-count: infinite;
+}
+h1.animated {
+  opacity: 1;
+  top: 0; }
+#sector1 .button {
+  transition: all 1s ease; 
+}
+#sector1 .button:hover {
+  color: #fff;
+  background: #005bff;
+  text-decoration: none;
+  transition: all 0.3s ease; 
+}
+a {
+  transition: all 0.3s ease; 
+}
+a:hover {
+  opacity:.5;
+  transition: all 0.3s ease; 
+}
+.mosaic-item p {
+    width: 200px;
+    margin: 14px 10px 10px 74px;
+    font-size: 21px;
+    text-align: left;
+}
+@keyframes animateMe {
+ 0% { stroke-dashoffset: 400; }
+ 100% { stroke-dashoffset: 0; }
+}
+
 @media (min-width: 1440) {
   
 }
