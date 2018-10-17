@@ -185,7 +185,36 @@ section#sector4 .content.content-title {
 .content.content-num {
     margin: 100px 10px 50px 30px;
 }
-
+.shops {
+  width: 300px;
+  float:left;
+  margin: 10px 10px 30px 20px;
+}
+.numblock {
+  color: #fff;
+}
+.numblock span
+{font-size: 50px;}
+.numblock p {
+  display: inline-block;
+  width: 109px;
+  height: 40px;
+  margin: 0 40px 0 0px;
+  padding: 0px 0px 0 8px;
+  text-align: left;
+  position: relative;
+}
+.numblock p:after{
+  content:"";
+  position: absolute;
+  top:-6px;
+  right: -20px;
+    width: 25px;
+    height: 62px;
+    z-index: 3;
+  z-index: 3;
+  background: url(../img/arrow.png);
+}
 @media (min-width: 1440) {
   
 }
