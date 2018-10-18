@@ -101,7 +101,7 @@ section:after{
   h1 {
     width: 50%;
     margin: 172px 0 0 112px;
-    font-size: 4.5vw;
+    font-size: 64px;
     text-align: left;
     line-height: 1.1;  
   }
@@ -151,7 +151,7 @@ section#sector3 .content {
     padding: 30px 0 0 0;
 }
 #sector3 .content h1 {
-    font-size: 4.5vw;
+    font-size: 64px;
     margin: 156px 83px 15px 107px;
     text-align: left;
     line-height: 1.1;
@@ -179,7 +179,7 @@ section#sector4 .content.content-title {
 
 }
 #sector4 .content h1 {
-    font-size: 4.5vw;
+    font-size: 74px;
     margin: 41px 0 0px 114px;
     text-align: left;
     line-height: 1;
@@ -301,86 +301,82 @@ a:hover {
  100% { stroke-dashoffset: 0; }
 }
 
-@media (min-width: 1440) {
-    .header {
-      max-width: 1440px;
-      height: 95px;
-      .tel {
-      margin: 34px 61px;
-      font-size: 18px;
-      }
-    }
-  }
-  #logo {
-      width: 198px;
-      margin: 22px 61px;
-  }
-  .header a {
-      margin: 0px 39px 0 0;
-  }
-  .page-container {
-    max-width: 1440px;
-    img {
-      width: 20rem;
-    }
-  }
-  section {
-    margin: 0;
-    .content {
-    margin: 0 65px;
-    }
-  }
-
+@media screen and (max-width: 1440px) {
   .flex-content {
-    h1 {
-      margin: 172px 0 0 112px;
-      font-size: 64px;
-      line-height: 1.1;  
-    }
-    div {
-      font-size: 21px;
-      margin: 178px 149px 0px 112px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-content: stretch;
+    position: relative;}
+    .flex-content h1 {
+    width: 50%;
+    margin: 16vw 0 0 3vw;
+    font-size: 4vw;
+    text-align: left;
+    line-height: 1.1;
+  }
+  .flex-content div {
+    width: 50%;
+    margin: 17vw 0 0 10vw;
+    font-size: 2vw;
+    text-align: left;
+    line-height: 1.1;
+  }
 
-      a.sertificates {
-        }
-      }
-    }
+  .flex-content a.sertificates {
+    position: absolute;
+    bottom:0;
+  }
+
   a.sertificates:after{
     content:">";
+    top: 0;
     right: -10px;
   }
   #sector1 .button-content {
     margin: 117px 0 181px 0;}
   #sector1 .button {
     border: 3px solid #005bff;
-    margin: 0px 31px 0px 0px;
-    padding: 18px 197px;
-    font-size: 27px;
+    color: #005bff;
+    margin: 0 2vw 0 0;
+    padding: 1.5vw 16vw;
+    font-size: 2vw;
   }
   #sector1 .button.button-activ {
-    padding:19px 168px;
+     padding: 1.5vw 16vw;
 
   }
   #sector2 .content h1 {
-      font-size: 64px;
-      margin: 179px 219px 100px 104px;
+      font-size: 4vw;
+      margin: 4vw 5vw 4vw 4vw;
+      text-align: left;
       line-height: 1.1;
   }
   .mosaic-item {
-      margin: 44px 76px 96px 40px;
+      margin: 3vw 4vw 4vw 3vw;
   }
   section#sector3 .content {
-      margin: 0 65px;
-      padding: 30px 0 0 0;
+      margin: 0 4vw;
+      padding: 3vw 0 0 0;
   }
   #sector3 .content h1 {
-      font-size: 64px;
-      margin: 156px 83px 15px 107px;
+      font-size: 4.5vw;
+      margin: 4vw 5vw 4vw 4vw;
+      text-align: left;
       line-height: 1.1;
+  }
+  #sector3 .content:after {
+      content: '.';
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden;
   }
   .textmosaic {
       width: 300px;
-      margin: 41px 63px 0px 100px;
+      float: left;
+      margin: 4vw 5vw 4vw 4vw;
+      text-align: left;
   }
   .textmosaic h2 {
       font-weight: 800;
@@ -392,66 +388,132 @@ a:hover {
 
   }
   #sector4 .content h1 {
-      font-size: 74px;
-      margin: 41px 0 0px 114px;
+      font-size: 4.5vw;
+      margin: 4vw 5vw 4vw 4vw;
+      text-align: left;
       line-height: 1;
+      color: #fff;
+  }
+  section#sector4 .content{
+    color: #fff;}
+  .content-num * {
+    display: inline;
+    color:#fff;
   }
   .content.content-num {
-      margin: 100px 10px 116px 30px;
+      margin: 4vw 5vw 4vw 4vw;
   }
   .shops {
     width: 200px;
-    margin: 10px 0px 40px 137px;
+    float: left;
+    margin: 4vw 5vw 4vw 4vw;
   }
   .shops h2 {
-      font-size: 21px;
+      font-size: 3vw;
+      text-align: left;
   }
+  .shops p {
 
+      text-align: left;
+  }
+  .shops a {
+      text-align: left;
+  }
+  .numblock {
+    color: #fff;
+  }
   .numblock span{
-    font-size: 60px;
+    font-size: 4vw;
     font-weight: 800;
   }
   .numblock p {
+    display: inline-block;
     width: 109px;
     height: 40px;
-    margin: 0 120px 0 0px;
-    padding: 0px 0px 0 8px;
+    margin: 0 5vw 0 0px;
+    padding: 0px 0px 0 0.2vw;
+    text-align: left;
+    position: relative;
   }
   .numblock p:after{
+    content:"";
+    position: absolute;
     top:-6px;
-    right: -20px;
-      width: 25px;
-      height: 62px;
+    right: 1vw;
+      width: 1vw;
+      height: 1vw;
+      z-index: 3;
+    z-index: 3;
+    background: url(../img/arrow.png);
   }
   .content.prise {
       font-weight: 800;
       font-size: 20px;
-      margin: 0 21px 39px 203px;
+      margin: 0 1vw 3vw 6vw;
+      text-align: left;
   }
   .textmosaic.svg-wrapper {
-      margin-bottom: 129px;
+      position: relative;
+      margin-bottom: 6vw;
   }
   .svg-anim {
-    width: 100px;
-    height: 100px;
-    top: 50px;
-    left: 130px;
+    position: absolute;
+    width: 4vw;
+    height: 4vw;
+    top: 5vw;
+    left: 15vw;
 
   }
   a.downl {
-    width: 50px;
-    height: 50px;
-    top: -3px;
-    right: -50px;  
+    position: absolute;
+    width: 4vw;
+    height: 4vw;
+    top: 0;
+    right: -6vw;  
   }
   a.downl img {
-      width: 64px;
-      height: 95.4px;
+      width: 4vw;
+      height: 5vw;
   }
-
+  path {
+    stroke-dasharray: 400;
+    animation: animateMe linear 4s normal forwards;
+    animation-iteration-count: infinite;
+  }
+  h1.animated {
+    opacity: 1;
+    top: 0; }
+  #sector1 .button {
+    transition: all 1s ease; 
+  }
+  #sector1 .button:hover {
+    color: #fff;
+    background: #005bff;
+    text-decoration: none;
+    transition: all 0.3s ease; 
+  }
+  a {
+    transition: all 0.3s ease; 
+  }
+  a:hover {
+    opacity:.5;
+    transition: all 0.3s ease; 
+  }
   .mosaic-item p {
       width: 200px;
-      margin: 14px 10px 10px 74px;
+      margin: 1vw 0.5vw 0.5vw 5vw;
       font-size: 21px;
+      text-align: left;
   }
+      .header a, .tel {
+      font-size: 1.2vw;
+    }
+    .header a {
+      margin: 0 1.2vw 0 0;
+    }
+}
+@media  screen and(max-width: 768px) {
+    .header a, tel {
+      display: none;
+    }
 }
