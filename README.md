@@ -1,5 +1,7 @@
 # ozon-test-task
 
+Сайт - [http://nocchka.ru/ozon](http://nocchka.ru/ozon).
+
 Cборка статического сайта с помощью `Webpack`.
 
 
@@ -13,7 +15,9 @@ Cборка статического сайта с помощью `Webpack`.
 
 3. Установите файлы командой npm install
 
-4.   сборка проекта - npm run start
+4. разработка - npm run start
+
+5. сборка - npm run build
 
 ## Контакты
 
